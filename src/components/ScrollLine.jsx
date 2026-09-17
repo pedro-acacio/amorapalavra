@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-// Barra de progresso de rolagem — reinterpreta a "linha contínua" da
-// identidade da Mahut (a trajetória da vida) como indicador de leitura.
 export default function ScrollLine() {
   const [pct, setPct] = useState(0);
 
@@ -18,16 +16,16 @@ export default function ScrollLine() {
 
   return (
     <div
-      className="hidden lg:block fixed left-0 top-0 h-full w-[3px] z-50"
-      style={{ background: "rgba(84,72,64,0.1)" }}
+      className="fixed top-0 left-0 right-0 h-[3px] z-50"
+      style={{ background: "rgba(85,35,31,0.1)" }}
       aria-hidden="true"
     >
       <div
-        className="w-full"
+        className="h-full"
         style={{
-          height: `${pct}%`,
-          background: "linear-gradient(180deg, #a15d3f, #464b2e)",
-          transition: "height 0.1s linear",
+          width: `${pct}%`,
+          background: "linear-gradient(90deg, #d8527d, #cf9a4c)",
+          transition: "width 0.1s linear",
         }}
       />
     </div>

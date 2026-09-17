@@ -9,7 +9,7 @@ export default function FloatingWhatsApp() {
       )}`}
       target="_blank"
       rel="noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-salvia text-papel shadow-xl hover:bg-rosa transition-colors"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-rosa text-creme shadow-xl hover:bg-vinho transition-colors"
       aria-label="Falar no WhatsApp"
     >
       <MessageCircle size={26} />

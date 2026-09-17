@@ -6,7 +6,7 @@ const ICONS = [NotebookPen, BookOpenCheck, CalendarHeart, Scissors];
 
 export default function Produtos() {
   return (
-    <section id="produtos" className="px-6 py-24 bg-papel">
+    <section id="produtos" className="px-6 py-24 bg-creme">
       <div className="max-w-6xl mx-auto">
         <Reveal className="max-w-xl">
           <span className="text-xs tracking-[0.2em] text-rosa font-medium uppercase">

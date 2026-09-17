@@ -1,5 +1,6 @@
 import { Heart, BookOpen, Scissors } from "lucide-react";
 import Reveal from "./Reveal";
+import BrandMark from "./BrandMark";
 import { MISSAO, SOBRE_FUNDADORA, FUNDADORA } from "../data";
 
 const VALORES = [
@@ -11,10 +12,10 @@ const VALORES = [
 export default function Sobre() {
   return (
     <section id="sobre">
-      <div className="bg-salvia px-6 py-24">
+      <div className="bg-vinho px-6 py-24">
         <div className="max-w-5xl mx-auto grid md:grid-cols-[minmax(0,260px)_1fr] gap-12 md:gap-16 items-center">
           <Reveal>
-            <div className="bg-papel rounded-2xl shadow-xl p-6 sm:p-8 flex flex-col gap-5">
+            <div className="bg-creme rounded-2xl shadow-xl p-6 sm:p-8 flex flex-col gap-5">
               {VALORES.map((v) => {
                 const Icon = v.icon;
                 return (
@@ -27,12 +28,12 @@ export default function Sobre() {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <span className="text-xs tracking-[0.2em] text-papel/70 font-medium uppercase">
-              Missão
+            <span className="font-script text-2xl text-rosa-clara leading-none">
+              a nossa missão
             </span>
-            <div className="mt-5 flex flex-col gap-4">
+            <div className="mt-4 flex flex-col gap-4">
               {MISSAO.map((paragrafo) => (
-                <p key={paragrafo.slice(0, 24)} className="text-sm md:text-base text-papel/90 leading-relaxed">
+                <p key={paragrafo.slice(0, 24)} className="text-sm md:text-base text-creme/90 leading-relaxed">
                   {paragrafo}
                 </p>
               ))}
@@ -41,11 +42,11 @@ export default function Sobre() {
         </div>
       </div>
 
-      <div className="px-6 py-24 bg-papel">
+      <div className="px-6 py-24 bg-creme">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
           <Reveal>
-            <div className="w-full max-w-sm mx-auto md:mx-0 aspect-[4/5] rounded-2xl shadow-xl bg-gradient-to-br from-dourado/20 via-rosa/15 to-salvia/20 border border-vinho/10 flex items-center justify-center">
-              <Heart size={72} strokeWidth={1} className="text-rosa/60" />
+            <div className="w-full max-w-sm mx-auto md:mx-0 aspect-square rounded-full bg-rosa-clara/50 flex items-center justify-center">
+              <BrandMark className="w-2/3 h-2/3" ring="#d8527d" line="#55231f" heart="#55231f" />
             </div>
           </Reveal>
           <Reveal delay={0.15}>

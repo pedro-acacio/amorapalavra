@@ -17,14 +17,14 @@ export default function Nav() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
-        background: solid ? "rgba(247,241,232,0.92)" : "transparent",
+        background: solid ? "rgba(250,243,228,0.94)" : "transparent",
         backdropFilter: solid ? "blur(10px)" : "none",
-        borderBottom: solid ? "1px solid rgba(74,47,53,0.12)" : "1px solid transparent",
+        borderBottom: solid ? "1px solid rgba(85,35,31,0.12)" : "1px solid transparent",
       }}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
-        <a href="#top" className="flex items-center gap-2">
-          <Logo className="h-8 w-auto" mark="#b8636f" text="#4a2f35" />
+        <a href="#top">
+          <Logo className="h-9" textClassName="text-vinho" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -41,7 +41,7 @@ export default function Nav() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-salvia text-papel hover:bg-rosa transition-colors"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-rosa text-creme hover:bg-vinho transition-colors"
           >
             <MessageCircle size={16} />
             Fazer pedido
@@ -58,7 +58,7 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="md:hidden px-6 pb-6 flex flex-col gap-4 bg-papel/98">
+        <div className="md:hidden px-6 pb-6 flex flex-col gap-4 bg-creme/98">
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
@@ -74,7 +74,7 @@ export default function Nav() {
             target="_blank"
             rel="noreferrer"
             onClick={() => setOpen(false)}
-            className="flex items-center justify-center gap-2 px-4 py-3 rounded-full text-sm font-medium bg-salvia text-papel"
+            className="flex items-center justify-center gap-2 px-4 py-3 rounded-full text-sm font-medium bg-rosa text-creme"
           >
             <MessageCircle size={16} />
             Chamar no WhatsApp

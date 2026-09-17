@@ -6,7 +6,7 @@ import { WHATSAPP_LINK, INSTAGRAM_URL, INSTAGRAM_HANDLE, LOCAL } from "../data";
 
 export default function Contato() {
   return (
-    <section id="contato" className="px-6 py-24 bg-papel">
+    <section id="contato" className="px-6 py-24 bg-creme">
       <div className="max-w-5xl mx-auto grid md:grid-cols-[minmax(0,300px)_1fr] gap-14 items-start">
         <Reveal>
           <span className="text-xs tracking-[0.2em] text-rosa font-medium uppercase">

@@ -110,7 +110,7 @@ export default function PedidoForm() {
 
       <button
         type="submit"
-        className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium bg-salvia text-papel hover:bg-rosa transition-colors mt-2"
+        className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium bg-rosa text-creme hover:bg-vinho transition-colors mt-2"
       >
         <Send size={16} /> Enviar pelo WhatsApp
       </button>
