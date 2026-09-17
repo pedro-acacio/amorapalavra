@@ -38,13 +38,13 @@ em `data.js`, como feito em `PROJETOS` no projeto original.
 
 ## Identidade visual
 
-Paleta extraída do selo da marca no Instagram (@amor_apalavra): `#faf3e4`
-(creme), `#d8527d` (rosa), `#55231f` (vinho), `#cf9a4c` (dourado).
-Tipografia de exibição: Playfair Display; destaques manuscritos: Caveat;
-corpo de texto: Nunito.
+A logo oficial da loja está em `src/assets/logo.jpg` (também usada como
+favicon em `public/favicon.jpg`) e é exibida em `src/components/Logo.jsx`,
+usado no cabeçalho, no rodapé, no hero e na seção "Sobre". Paleta extraída
+dela: `#faf3e4` (creme), `#d8527d` (rosa), `#55231f` (vinho), `#cf9a4c`
+(dourado). Tipografia de exibição: Playfair Display; destaques
+manuscritos: Caveat; corpo de texto: Nunito.
 
-O ícone em `src/components/BrandMark.jsx` (coração abraçado por duas
-curvas, com um brilho) é uma releitura própria do selo de mãos e coração
-do perfil — não é o arquivo de logo original da loja. Os cadernos com
-espiral em `src/components/NotebookMock.jsx` também são uma referência
-direta ao produto real, usada como placeholder até termos fotos.
+Os cadernos com espiral em `src/components/NotebookMock.jsx` são uma
+referência ao produto real da loja, usada como placeholder na galeria
+até termos fotos de verdade.

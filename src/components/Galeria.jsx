@@ -1,7 +1,6 @@
 import { Heart } from "lucide-react";
 import Reveal from "./Reveal";
 import NotebookMock from "./NotebookMock";
-import BrandMark from "./BrandMark";
 import { GALERIA } from "../data";
 
 const COVERS = ["#f3c8d5", "#cf9a4c", "#e8b4c4", "#dba8b8", "#e3c88f", "#f0d3dd"];
@@ -27,11 +26,7 @@ export default function Galeria() {
           {GALERIA.map((p, i) => (
             <Reveal key={p.slug} delay={(i % 3) * 0.08}>
               <NotebookMock cover={COVERS[i % COVERS.length]} className="w-full aspect-[4/3]">
-                {i % 2 === 0 ? (
-                  <Heart size={32} strokeWidth={1.2} className="text-vinho/40" />
-                ) : (
-                  <BrandMark className="w-12 h-12" ring="transparent" line="#55231f" heart="#55231f" />
-                )}
+                <Heart size={32} strokeWidth={1.2} className="text-vinho/40" />
               </NotebookMock>
               <p className="mt-3 text-center font-display text-lg text-vinho">{p.title}</p>
             </Reveal>

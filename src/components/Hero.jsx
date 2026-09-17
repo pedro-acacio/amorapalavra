@@ -1,7 +1,7 @@
 import { MessageCircle, ArrowDown, Heart } from "lucide-react";
 import Reveal from "./Reveal";
-import BrandMark from "./BrandMark";
 import NotebookMock from "./NotebookMock";
+import logo from "../assets/logo.jpg";
 import { WHATSAPP_LINK } from "../data";
 
 export default function Hero() {
@@ -10,11 +10,11 @@ export default function Hero() {
       id="top"
       className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 overflow-hidden"
     >
-      <BrandMark
-        className="absolute -top-8 -right-16 w-72 h-72 opacity-[0.07] pointer-events-none rotate-6"
-        ring="#55231f"
-        line="#55231f"
-        heart="#55231f"
+      <img
+        src={logo}
+        alt=""
+        aria-hidden="true"
+        className="absolute -top-10 -right-20 w-80 h-80 rounded-full object-cover opacity-[0.08] pointer-events-none rotate-6"
       />
 
       <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
@@ -63,7 +63,7 @@ export default function Hero() {
               rotate={4}
               className="absolute right-2 top-0 w-56 md:w-64 h-72 md:h-80"
             >
-              <BrandMark className="w-16 h-16" ring="transparent" line="#55231f" heart="#55231f" />
+              <img src={logo} alt="Amor à Palavra" className="w-16 h-16 rounded-full object-cover shadow" />
             </NotebookMock>
 
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-8 bg-vinho text-creme rounded-xl px-6 py-4 shadow-lg max-w-[210px]">
