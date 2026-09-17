@@ -63,7 +63,7 @@ export default function Hero() {
               rotate={4}
               className="absolute right-2 top-0 w-56 md:w-64 h-72 md:h-80"
             >
-              <img src={logo} alt="Amor à Palavra" className="w-16 h-16 rounded-full object-cover shadow" />
+              <Heart size={40} strokeWidth={1.2} className="text-vinho/60" />
             </NotebookMock>
 
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-8 bg-vinho text-creme rounded-xl px-6 py-4 shadow-lg max-w-[210px]">
