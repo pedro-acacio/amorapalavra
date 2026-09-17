@@ -11,6 +11,7 @@ export const FUNDADORA = "Gabi Andrade";
 export const NAV_LINKS = [
   { href: "#sobre", label: "Sobre" },
   { href: "#produtos", label: "Produtos" },
+  { href: "#guias", label: "Guias" },
   { href: "#galeria", label: "Galeria" },
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#contato", label: "Contato" },
@@ -43,6 +44,19 @@ export const PRODUTOS = [
   {
     title: "Cursos de Encadernação",
     text: "Oficinas presenciais de encadernação do zero, para aprender a montar cadernos de capa dura do primeiro corte ao acabamento.",
+  },
+];
+
+export const GUIAS = [
+  {
+    title: "Guia bíblico: Pentateuco",
+    text: "Um guia de estudo para percorrer os cinco primeiros livros da Bíblia com mais profundidade.",
+    link: "https://pay.kiwify.com.br/Ypy3Bm0",
+  },
+  {
+    title: "Guia bíblico: Livros Históricos",
+    text: "Um guia de estudo para acompanhar a história do povo de Deus nos livros históricos do Antigo Testamento.",
+    link: "https://pay.kiwify.com.br/gdu9cDT",
   },
 ];
 
